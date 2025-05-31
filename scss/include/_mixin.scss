@@ -1,0 +1,36 @@
+@mixin font-Roboto-Thin{
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+}
+@mixin font-Roboto-ExtraLight{
+	font-family: "Roboto", sans-serif;
+	font-weight: 200;
+}
+@mixin font-Roboto-Light{
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+@mixin font-Roboto-Regular{
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+@mixin font-Roboto-Medium{
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+}
+@mixin font-Roboto-SemiBold{
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+}
+@mixin font-Roboto-Bold{
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+}
+@mixin font-Roboto-ExtraBold{
+	font-family: "Roboto", sans-serif;
+	font-weight: 800;
+}
+@mixin font-Roboto-Black{
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+}

@@ -1,0 +1,38 @@
+{
+  "name": "analyte-me",
+  "version": "1.0.0",
+  "description": "Figma to HTML/CSS/JS",
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "SCSS",
+    "Gulp",
+    "Bootstrap5"
+  ],
+  "homepage": "https://github.com/RahulMoral/analyte-me#readme",
+  "bugs": {
+    "url": "https://github.com/RahulMoral/analyte-me/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahulMoral/analyte-me.git"
+  },
+  "license": "ISC",
+  "author": "Rahul Moral",
+  "type": "commonjs",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "bootstrap": "^5.3.6",
+    "browser-sync": "^3.0.4",
+    "browserslist": "^4.25.0",
+    "gulp": "^5.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.1",
+    "postcss": "^8.5.4",
+    "sass": "^1.79.6"
+  }
+}

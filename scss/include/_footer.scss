@@ -1,0 +1,113 @@
+.main-footer{
+	padding: 33px 0 45px;
+	.main-footer-wrapper{
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+		@include media-breakpoint-down(md){
+			row-gap: 30px;
+		}
+		.main-footer-left{
+			flex: 0 0 50%;
+			max-width: 50%;
+			@include media-breakpoint-down(md){
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+		}
+		.main-footer-right{
+			flex: 0 0 50%;
+			max-width: 50%;
+			@include media-breakpoint-down(md){
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+		}
+		.main-footer-top,
+		.main-footer-bottom{
+			display: flex;
+			flex-wrap: wrap;
+			@include media-breakpoint-down(md){
+				row-gap: 30px;
+			}
+		}
+		.main-footer-bottom{
+			align-items: flex-end;
+			@include media-breakpoint-down(md){
+				align-items: unset;
+				flex-direction: column-reverse;
+			}
+		}
+		.main-footer-social{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			max-width: 240px;
+			.main-footer-social-item{
+				align-items: center;
+				background-color: #333333;
+				border-radius: 50%;
+				display: flex;
+				flex: 0 0 60px;
+				height: 60px;
+				justify-content: center;
+				max-width: 60px;
+			}
+		}
+		p{
+			color: #97A0A9;
+			font-size: 16px;
+			@include font-Roboto-Medium;
+			line-height: calc(22 / 16);
+			margin-bottom: 0;
+		}
+		.main-footer-menu{
+			column-gap: 24px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			.main-footer-menu-left,
+			.main-footer-menu-right{
+				display: flex;
+				flex-direction: column;
+				row-gap: 16px;
+			}
+			.main-footer-menu-item{
+				color: #E8ECEF;
+				font-size: 16px;
+				@include font-Roboto-Medium;
+				line-height: calc(22 / 16);
+			}
+			.main-footer-menu-right{
+				.main-footer-menu-item{
+					max-width: 200px;
+				}
+			}
+		}
+		.main-footer-contact-info{
+			column-gap: 24px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			@include media-breakpoint-down(lg){
+				grid-template-columns: 1fr;
+				row-gap: 30px;
+			}
+			.main-footer-contact-info-item{
+				display: flex;
+				flex-direction: column;
+				row-gap: 8px;
+				span{
+					color: #97A0A9;
+					font-size: 16px;
+					@include font-Roboto-Medium;
+					line-height: calc(22 / 16);
+				}
+				a{
+					color: #E8ECEF;
+					font-size: 23px;
+					@include font-Roboto-SemiBold;
+					line-height: calc(28 / 23);
+				}
+			}
+		}
+	}
+}
