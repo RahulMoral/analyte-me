@@ -114,6 +114,20 @@
 					background-color: transparent;
 					border: 0;
 					padding: 0;
+					.menu-icon{
+						.bar {
+							transition: all 0.3s ease;
+							transform-origin: center;
+						}
+						&.cross{
+							.top{
+								transform: translateY(6px) rotate(45deg);
+							}
+							.bottom{
+								transform: translateY(-6px) rotate(-45deg);
+							}
+						}
+					}
 				}
 			}
 		}
@@ -327,6 +341,7 @@
 	top: 0;
 	transform: translateX(200%);
 	transition: all 0.3s ease-in-out 0s;
+	z-index: 1040;
 	&.mobile-menu-active{
 		@include media-breakpoint-down(sm){
 			transform: translateX(0);

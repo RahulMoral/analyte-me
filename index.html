@@ -128,9 +128,9 @@
 								<!-- Top header login -->
 								<div class="main-menu-toggler">
 									<button type="button" role="button" class="mobile-menu-toggle-button">
-										<svg width="32" height="14" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect width="32" height="2" fill="black"/>
-											<rect y="12" width="32" height="2" fill="black"/>
+										<svg class="menu-icon" width="32" height="14" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect class="bar top" width="32" height="2" fill="black"/>
+											<rect class="bar bottom" y="12" width="32" height="2" fill="black"/>
 										</svg>
 									</button>
 								</div>
@@ -248,6 +248,8 @@
 								</div>
 							</div>
 							<div class="hero-banner-image">
+								<img class="img-fluid d-block active" alt="Hero Banner Image" src="images/hero-banner-image.png" />
+								<img class="img-fluid d-block" alt="Hero Banner Image" src="images/hero-banner-image.png" />
 								<img class="img-fluid d-block" alt="Hero Banner Image" src="images/hero-banner-image.png" />
 							</div>
 						</div>
@@ -933,11 +935,13 @@
 				const menuOpenButton = document.querySelector('.mobile-menu-toggle-button');
 				const menuCloseButton = document.querySelector('.mobile-menu-closer');
 				const mobileMenu = document.querySelector('.mobile-menu');
+				const iconRotate = document.querySelector('.menu-icon');
 
 				if (menuOpenButton && mobileMenu) {
 					menuOpenButton.addEventListener('click', function (e) {
 						e.preventDefault();
 						mobileMenu.classList.add('mobile-menu-active');
+						iconRotate.classList.add('cross');
 					});
 				}
 
@@ -947,6 +951,7 @@
 						const parentMenu = menuCloseButton.closest('.mobile-menu');
 						if (parentMenu) {
 							parentMenu.classList.remove('mobile-menu-active');
+							iconRotate.classList.remove('cross');
 						}
 					});
 				}
@@ -966,7 +971,7 @@
 				function updateButtonVisibility() {
 					const wrapperWidth = wrapper.offsetWidth;
 					const totalContentWidth = items.length * step - gap;
-					nextButton.style.display = totalContentWidth > wrapperWidth ? 'block' : 'none';
+					nextButton.style.display = totalContentWidth > wrapperWidth ? 'flex' : 'none';
 				}
 
 				function scrollNext() {
@@ -997,5 +1002,47 @@
 				updateButtonVisibility();
 			});
 		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const carousel = document.querySelector('#carouselExampleIndicators');
+				const images = document.querySelectorAll('.hero-banner-image img');
+				const container = document.querySelector('.hero-banner-image');
+
+				let currentIndex = 0;
+
+				if (images.length > 0) {
+					images[0].classList.add('active');
+					adjustContainerHeight(images[0]);
+				}
+
+				function adjustContainerHeight(img) {
+					if (!img) return;
+					if (img.complete) {
+						container.style.height = img.offsetHeight + 'px';
+					} else {
+						img.onload = () => {
+							container.style.height = img.offsetHeight + 'px';
+						};
+					}
+				}
+
+				carousel.addEventListener('slide.bs.carousel', function (e) {
+					const nextIndex = e.to;
+					if (nextIndex === currentIndex) return;
+
+					images[currentIndex].classList.remove('active');
+					images[nextIndex].classList.add('active');
+					currentIndex = nextIndex;
+
+					adjustContainerHeight(images[nextIndex]);
+				});
+
+				// Recalculate height on window resize
+				window.addEventListener('resize', function () {
+					adjustContainerHeight(images[currentIndex]);
+				});
+			});
+		</script>
+
 	</body>
 </html>
