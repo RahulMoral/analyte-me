@@ -343,7 +343,7 @@
 	transition: all 0.3s ease-in-out 0s;
 	z-index: 1040;
 	&.mobile-menu-active{
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(md){
 			transform: translateX(0);
 		}
 	}
