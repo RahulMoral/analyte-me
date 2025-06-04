@@ -1,0 +1,45 @@
+.page-breadcrumb{
+	padding: 30px 0;
+	.page-breadcrumb-wrapper{
+		display: flex;
+		flex-direction: column;
+		padding-left: 220px;
+		row-gap: 10px;
+		@include media-breakpoint-down(xl){
+			padding-left: 124px;
+		}
+		@include media-breakpoint-down(lg){
+			padding-left: 0;
+		}
+		h1{
+			color: black;
+			font-size: 36px;
+			@include font-Roboto-Bold;
+			line-height: calc(42 / 36);
+			margin-bottom: 0;
+		}
+		.page-breadcrumb-menu{
+			align-items: center;
+			column-gap: 6px;
+			display: flex;
+			.page-breadcrumb-item{
+				a,
+				span{
+					color: #757B82;
+					font-size: 17px;
+					@include font-Roboto-Regular;
+					line-height: calc(28 / 17);
+				}
+				&.separator{
+					&:after{
+						background-color: #757B82;
+						content: '';
+						display: block;
+						height: 1px;
+						width: 14px;
+					}
+				}
+			}
+		}
+	}
+}
