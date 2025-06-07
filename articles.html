@@ -212,8 +212,8 @@
 				<section class="page-breadcrumb">
 					<div class="container">
 						<div class="page-breadcrumb-wrapper ps-0">
-							<div class="articles-search-heading-wrapper">
-								<div class="articles-search-heading">
+							<div class="page-breadcrumb-search-heading-wrapper">
+								<div class="page-breadcrumb-search-heading">
 									<h1>
 										<span>Articles</span>
 										<span class="supper-text">80 Art.</span>
@@ -224,14 +224,14 @@
 										</div>
 										<div class="page-breadcrumb-item separator"></div>
 										<div class="page-breadcrumb-item">
-											<span>Personal page</span>
+											<span>Articles</span>
 										</div>
 									</div>
 								</div>
-								<form class="articles-search-heading-form" action="" method="post">
-									<label class="articles-search-heading-form-label">
-										<input class="articles-search-heading-form-input" type="search" placeholder="Search Articles" />
-										<button class="articles-search-heading-form-button" type="submit" role="button">
+								<form class="page-breadcrumb-search-heading-form" action="" method="post">
+									<label class="page-breadcrumb-search-heading-form-label">
+										<input class="page-breadcrumb-search-heading-form-input" type="search" placeholder="Search Articles" />
+										<button class="page-breadcrumb-search-heading-form-button" type="submit" role="button">
 											<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path fill-rule="evenodd" clip-rule="evenodd" d="M8.88389 15.5215C12.544 15.5289 15.5252 12.5719 15.5427 8.91678C15.5602 5.26168 12.6073 2.29263 8.94723 2.28522C5.28716 2.27781 2.3059 5.23485 2.28841 8.88995C2.27092 12.5451 5.22382 15.5141 8.88389 15.5215ZM8.87295 17.8067C13.7968 17.8167 17.8075 13.8386 17.831 8.92141C17.8545 4.00423 13.882 0.00998436 8.95816 1.86833e-05C4.03429 -0.009947 0.0236342 3.96814 0.000103994 8.88532C-0.0234262 13.8025 3.94908 17.7967 8.87295 17.8067Z" fill="#757B82"/>
 												<path fill-rule="evenodd" clip-rule="evenodd" d="M19.0457 20.6664L13.0761 14.705L14.6965 13.0869L20.666 19.0484C21.1122 19.494 21.1112 20.2174 20.6638 20.6642C20.2163 21.1111 19.4919 21.112 19.0457 20.6664Z" fill="#757B82"/>
@@ -383,16 +383,6 @@
 								</a>
 								<!-- Each item -->
 							</div>
-							<div class="main-articles-load-more">
-								<button class="main-articles-load-more-button" type="button" role="button">
-									<span>More</span>
-									<span>
-										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.337954 0.305758C0.788559 -0.10192 1.51913 -0.10192 1.96974 0.305758L5 3.04734L8.03026 0.305758C8.48087 -0.101919 9.21144 -0.101919 9.66205 0.305758C10.1127 0.713436 10.1127 1.37441 9.66205 1.78209L5 6L0.337954 1.78209C-0.112651 1.37441 -0.112651 0.713435 0.337954 0.305758Z" fill="#3F4B56"/>
-										</svg>
-									</span>
-								</button>
-							</div>
 						</div>
 					</div>
 				</section>
@@ -401,51 +391,63 @@
 				<section class="site-pagination">
 					<div class="container">
 						<div class="site-pagination-wrapper">
-							<div class="site-pagination-menus">
-								<div class="site-pagination-menu-action">
-									<button class="site-pagination-menu-action-button" type="button" role="button">
-										<svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9472 14L17 12.499L11.5425 7L17 1.50096L14.9472 -3.46333e-07L8 7L14.9472 14Z" fill="#97A0A9"/>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M6.17527 14L8 12.499L3.14886 7L8 1.50096L6.17527 1.49353e-06L6.11959e-07 7L6.17527 14Z" fill="#97A0A9"/>
+							<div class="site-pagination-load-more">
+								<button class="site-pagination-load-more-button" type="button" role="button">
+									<span>More</span>
+									<span>
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.337954 0.305758C0.788559 -0.10192 1.51913 -0.10192 1.96974 0.305758L5 3.04734L8.03026 0.305758C8.48087 -0.101919 9.21144 -0.101919 9.66205 0.305758C10.1127 0.713436 10.1127 1.37441 9.66205 1.78209L5 6L0.337954 1.78209C-0.112651 1.37441 -0.112651 0.713435 0.337954 0.305758Z" fill="#3F4B56"/>
 										</svg>
-									</button>
-									<button class="site-pagination-menu-action-button" type="button" role="button">
-										<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M6.94717 14L9 12.499L3.54246 7L9 1.50096L6.94717 1.56102e-06L6.11959e-07 7L6.94717 14Z" fill="#97A0A9"/>
-										</svg>
-									</button>
-								</div>
-								<div class="site-pagination-counter">77 out of 99</div>
-								<div class="site-pagination-menu">
-									<a class="site-pagination-menu-item" href="javascript:void(0);">1</a>
-									<a class="site-pagination-menu-item" href="javascript:void(0);">2</a>
-									<a class="site-pagination-menu-item active" href="javascript:void(0);">3</a>
-									<a class="site-pagination-menu-item" href="javascript:void(0);">4</a>
-									<a class="site-pagination-menu-item" href="javascript:void(0);">5</a>
-									<a class="site-pagination-menu-item" href="javascript:void(0);">6</a>
-									<a class="site-pagination-menu-item" href="javascript:void(0);">7</a>
-									<a class="site-pagination-menu-item" href="javascript:void(0);">8</a>
-								</div>
-								<div class="site-pagination-menu-action">
-									<button class="site-pagination-menu-action-button" type="button" role="button">
-										<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M2.05283 0L0 1.50096L5.45754 7L0 12.499L2.05283 14L9 7L2.05283 0Z" fill="#97A0A9"/>
-										</svg>
-									</button>
-									<button class="site-pagination-menu-action-button" type="button" role="button">
-										<svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M2.05283 0L0 1.50096L5.45754 7L0 12.499L2.05283 14L9 7L2.05283 0Z" fill="#97A0A9"/>
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M10.8247 0L9 1.50096L13.8511 7L9 12.499L10.8247 14L17 7L10.8247 0Z" fill="#97A0A9"/>
-										</svg>
-									</button>
-								</div>
+									</span>
+								</button>
 							</div>
-							<button class="site-pagination-scroll-top" type="button" role="button">
-								<svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M6 2H8V17H6V2Z" fill="#97A0A9"/>
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.17527L1.50096 8L7 3.14886L12.499 8L14 6.17527L7 0L0 6.17527Z" fill="#97A0A9"/>
-								</svg>
-							</button>
+							<div class="site-pagination-container">
+								<div class="site-pagination-menus">
+									<div class="site-pagination-menu-action">
+										<button class="site-pagination-menu-action-button" type="button" role="button">
+											<svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9472 14L17 12.499L11.5425 7L17 1.50096L14.9472 -3.46333e-07L8 7L14.9472 14Z" fill="#97A0A9"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M6.17527 14L8 12.499L3.14886 7L8 1.50096L6.17527 1.49353e-06L6.11959e-07 7L6.17527 14Z" fill="#97A0A9"/>
+											</svg>
+										</button>
+										<button class="site-pagination-menu-action-button" type="button" role="button">
+											<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M6.94717 14L9 12.499L3.54246 7L9 1.50096L6.94717 1.56102e-06L6.11959e-07 7L6.94717 14Z" fill="#97A0A9"/>
+											</svg>
+										</button>
+									</div>
+									<div class="site-pagination-counter">77 out of 99</div>
+									<div class="site-pagination-menu">
+										<a class="site-pagination-menu-item" href="javascript:void(0);">1</a>
+										<a class="site-pagination-menu-item" href="javascript:void(0);">2</a>
+										<a class="site-pagination-menu-item active" href="javascript:void(0);">3</a>
+										<a class="site-pagination-menu-item" href="javascript:void(0);">4</a>
+										<a class="site-pagination-menu-item" href="javascript:void(0);">5</a>
+										<a class="site-pagination-menu-item" href="javascript:void(0);">6</a>
+										<a class="site-pagination-menu-item" href="javascript:void(0);">7</a>
+										<a class="site-pagination-menu-item" href="javascript:void(0);">8</a>
+									</div>
+									<div class="site-pagination-menu-action">
+										<button class="site-pagination-menu-action-button" type="button" role="button">
+											<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.05283 0L0 1.50096L5.45754 7L0 12.499L2.05283 14L9 7L2.05283 0Z" fill="#97A0A9"/>
+											</svg>
+										</button>
+										<button class="site-pagination-menu-action-button" type="button" role="button">
+											<svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M2.05283 0L0 1.50096L5.45754 7L0 12.499L2.05283 14L9 7L2.05283 0Z" fill="#97A0A9"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M10.8247 0L9 1.50096L13.8511 7L9 12.499L10.8247 14L17 7L10.8247 0Z" fill="#97A0A9"/>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<button class="site-pagination-scroll-top" type="button" role="button">
+									<svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 2H8V17H6V2Z" fill="#97A0A9"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.17527L1.50096 8L7 3.14886L12.499 8L14 6.17527L7 0L0 6.17527Z" fill="#97A0A9"/>
+									</svg>
+								</button>
+							</div>
 						</div>
 					</div>
 				</section>

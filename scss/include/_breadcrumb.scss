@@ -11,7 +11,7 @@
 		@include media-breakpoint-down(lg){
 			padding-left: 0;
 		}
-		.articles-search-heading-wrapper{
+		.page-breadcrumb-search-heading-wrapper{
 			align-items: flex-start;
 			column-gap: 1rem;
 			display: flex;
@@ -20,7 +20,7 @@
 				flex-wrap: wrap;
 				row-gap: 25px;
 			}
-			.articles-search-heading-form{
+			.page-breadcrumb-search-heading-form{
 				flex: 0 0 392px;
 				max-width: 392px;
 				@include media-breakpoint-down(xl){
@@ -31,11 +31,11 @@
 					flex: 0 0 100%;
 					max-width: 100%;
 				}
-				.articles-search-heading-form-label{
+				.page-breadcrumb-search-heading-form-label{
 					margin-bottom: 0;
 					position: relative;
 					width: 100%;
-					.articles-search-heading-form-input{
+					.page-breadcrumb-search-heading-form-input{
 						border-color: #333333;
 						border-radius: 0;
 						border-style: solid;
@@ -68,7 +68,7 @@
 							opacity: 1;
 						}
 					}
-					.articles-search-heading-form-button{
+					.page-breadcrumb-search-heading-form-button{
 						background-color: transparent;
 						border: none;
 						border-radius: 0;
@@ -95,17 +95,30 @@
 			@include font-Roboto-Bold;
 			line-height: calc(42 / 36);
 			margin-bottom: 0;
+			@include media-breakpoint-down(md){
+				display: inline-block;
+			}
+			@media (max-width: 359.98px){
+				font-size: 30px;
+			}
 			.supper-text{
 				color: #333333;
 				font-size: 20px;
 				@include font-Roboto-Regular;
 				line-height: calc(27 / 20);
+				white-space: nowrap;
+				@include media-breakpoint-down(md){
+					display: inline-block;
+					position: relative;
+					top: -13px;
+				}
 			}
 		}
 		.page-breadcrumb-menu{
 			align-items: center;
 			column-gap: 6px;
 			display: flex;
+			flex-wrap: wrap;
 			.page-breadcrumb-item{
 				a,
 				span{
@@ -113,6 +126,7 @@
 					font-size: 17px;
 					@include font-Roboto-Regular;
 					line-height: calc(28 / 17);
+					white-space: nowrap;
 				}
 				&.separator{
 					&:after{
