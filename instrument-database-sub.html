@@ -253,7 +253,7 @@
 					<div class="container">
 						<div class="instrument-database-sub-wrapper">
 							<aside class="instrument-database-sub-left">
-								<div class="instrument-database-filter-toggle">Filter</div>
+								<button type="button" role="button" class="instrument-database-filter-toggle">Filter</button>
 								<!-- Instrument database sub filter toggler -->
 								<div class="filter">
 									<div class="filter-header">
@@ -411,22 +411,22 @@
 										<!-- Instrument database filter accordion end -->
 										<div class="main-filter">
 											<div class="main-filter-item">
-												<div class="main-filter-item-header">
-													<div class="main-filter-item-header-text">
-														<button type="button" role="button" data-bs-toggle="collapse" data-bs-target="#instrumentFilter1" aria-expanded="false" aria-controls="instrumentFilter1">Filter Small 1-5</button>
+												<button class="main-filter-item-header" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#instrumentFilter1" aria-expanded="false" aria-controls="instrumentFilter1">
+													<span class="main-filter-item-header-text">
+														<span>Filter Small 1-5</span>
 														<span data-bs-toggle="tooltip" data-bs-title="Filter Small 1-5" data-bs-placement="top">
 															<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<circle cx="13" cy="13" r="12.5" stroke="#757B82"/>
 																<path d="M11.6719 16.2354V16.114C11.6804 15.3214 11.7592 14.6907 11.9084 14.2219C12.0618 13.7532 12.2791 13.3739 12.5604 13.0842C12.8416 12.7944 13.1804 12.5302 13.5767 12.2915C13.8324 12.1296 14.0625 11.9485 14.267 11.7482C14.4716 11.5479 14.6335 11.3178 14.7528 11.0579C14.8722 10.7979 14.9318 10.5103 14.9318 10.195C14.9318 9.8157 14.8423 9.48757 14.6634 9.21058C14.4844 8.93359 14.2457 8.72053 13.9474 8.57138C13.6534 8.41797 13.3253 8.34126 12.9631 8.34126C12.6349 8.34126 12.3217 8.40945 12.0234 8.54581C11.7251 8.68217 11.478 8.89524 11.282 9.18501C11.0859 9.47053 10.973 9.83913 10.9432 10.2908H9C9.02983 9.52379 9.22372 8.87607 9.58168 8.34766C9.93963 7.81499 10.4126 7.41229 11.0007 7.13956C11.593 6.86683 12.2472 6.73047 12.9631 6.73047C13.7472 6.73047 14.4332 6.87749 15.0213 7.17152C15.6094 7.46129 16.0653 7.86825 16.3892 8.3924C16.7173 8.91229 16.8814 9.51953 16.8814 10.2141C16.8814 10.6914 16.8068 11.1218 16.6577 11.5053C16.5085 11.8846 16.2955 12.2234 16.0185 12.5217C15.7457 12.82 15.4176 13.0842 15.0341 13.3143C14.6719 13.5401 14.3778 13.7745 14.152 14.0174C13.9304 14.2603 13.7685 14.5479 13.6662 14.8803C13.5639 15.2127 13.5085 15.6239 13.5 16.114V16.2354H11.6719ZM12.6371 20.1218C12.2876 20.1218 11.9872 19.9982 11.7358 19.7511C11.4844 19.4996 11.3587 19.1971 11.3587 18.8434C11.3587 18.494 11.4844 18.1957 11.7358 17.9485C11.9872 17.6971 12.2876 17.5714 12.6371 17.5714C12.9822 17.5714 13.2805 17.6971 13.532 17.9485C13.7876 18.1957 13.9155 18.494 13.9155 18.8434C13.9155 19.0778 13.8558 19.293 13.7365 19.489C13.6214 19.6808 13.468 19.8342 13.2763 19.9492C13.0845 20.0643 12.8714 20.1218 12.6371 20.1218Z" fill="#757B82"/>
 															</svg>
 														</span>
-													</div>
-													<button type="button" role="button" data-bs-toggle="collapse" data-bs-target="#instrumentFilter1" aria-expanded="false" aria-controls="instrumentFilter1" class="main-filter-item-header-icon">
+													</span>
+													<span class="main-filter-item-header-icon">
 														<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path fill-rule="evenodd" clip-rule="evenodd" d="M0.337954 0.305758C0.788559 -0.10192 1.51913 -0.10192 1.96974 0.305758L5 3.04734L8.03026 0.305758C8.48087 -0.101919 9.21144 -0.101919 9.66205 0.305758C10.1127 0.713436 10.1127 1.37441 9.66205 1.78209L5 6L0.337954 1.78209C-0.112651 1.37441 -0.112651 0.713435 0.337954 0.305758Z" fill="#757B82"/>
 														</svg>
-													</button>
-												</div>
+													</span>
+												</button>
 												<!-- Filter header -->
 												<div class="collapse" id="instrumentFilter1">
 													<div class="main-filter-item-body">
@@ -447,7 +447,7 @@
 															<div class="main-filter-item-check">
 																<input class="main-filter-item-check-input" hidden type="checkbox" id="filterItemCheck_2" />
 																<label class="main-filter-item-check-label" for="filterItemCheck_2">
-																	<span>High resolution GC-MS resolution</span>
+																	<span>The value filter parameter</span>
 																	<span data-bs-toggle="tooltip" data-bs-title="Filter Small 1-5" data-bs-placement="top">
 																		<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 																			<circle cx="13" cy="13" r="12.5" stroke="#757B82"/>
@@ -460,7 +460,7 @@
 															<div class="main-filter-item-check">
 																<input class="main-filter-item-check-input" hidden type="checkbox" id="filterItemCheck_3" />
 																<label class="main-filter-item-check-label" for="filterItemCheck_3">
-																	<span>High resolution GC-MS resolution</span>
+																	<span>Description</span>
 																	<span data-bs-toggle="tooltip" data-bs-title="Filter Small 1-5" data-bs-placement="top">
 																		<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 																			<circle cx="13" cy="13" r="12.5" stroke="#757B82"/>
@@ -503,22 +503,22 @@
 											</div>
 											<!-- Each item -->
 											<div class="main-filter-item">
-												<div class="main-filter-item-header">
-													<div class="main-filter-item-header-text">
-														<button type="button" role="button" data-bs-toggle="collapse" data-bs-target="#instrumentFilter3" aria-expanded="false" aria-controls="instrumentFilter3">Filter Small 1-5</button>
+												<button class="main-filter-item-header" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#instrumentFilter3" aria-expanded="false" aria-controls="instrumentFilter3">
+													<span class="main-filter-item-header-text">
+														<span>Filter Small 1-5</span>
 														<span data-bs-toggle="tooltip" data-bs-title="Filter Small 1-5" data-bs-placement="top">
 															<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<circle cx="13" cy="13" r="12.5" stroke="#757B82"/>
 																<path d="M11.6719 16.2354V16.114C11.6804 15.3214 11.7592 14.6907 11.9084 14.2219C12.0618 13.7532 12.2791 13.3739 12.5604 13.0842C12.8416 12.7944 13.1804 12.5302 13.5767 12.2915C13.8324 12.1296 14.0625 11.9485 14.267 11.7482C14.4716 11.5479 14.6335 11.3178 14.7528 11.0579C14.8722 10.7979 14.9318 10.5103 14.9318 10.195C14.9318 9.8157 14.8423 9.48757 14.6634 9.21058C14.4844 8.93359 14.2457 8.72053 13.9474 8.57138C13.6534 8.41797 13.3253 8.34126 12.9631 8.34126C12.6349 8.34126 12.3217 8.40945 12.0234 8.54581C11.7251 8.68217 11.478 8.89524 11.282 9.18501C11.0859 9.47053 10.973 9.83913 10.9432 10.2908H9C9.02983 9.52379 9.22372 8.87607 9.58168 8.34766C9.93963 7.81499 10.4126 7.41229 11.0007 7.13956C11.593 6.86683 12.2472 6.73047 12.9631 6.73047C13.7472 6.73047 14.4332 6.87749 15.0213 7.17152C15.6094 7.46129 16.0653 7.86825 16.3892 8.3924C16.7173 8.91229 16.8814 9.51953 16.8814 10.2141C16.8814 10.6914 16.8068 11.1218 16.6577 11.5053C16.5085 11.8846 16.2955 12.2234 16.0185 12.5217C15.7457 12.82 15.4176 13.0842 15.0341 13.3143C14.6719 13.5401 14.3778 13.7745 14.152 14.0174C13.9304 14.2603 13.7685 14.5479 13.6662 14.8803C13.5639 15.2127 13.5085 15.6239 13.5 16.114V16.2354H11.6719ZM12.6371 20.1218C12.2876 20.1218 11.9872 19.9982 11.7358 19.7511C11.4844 19.4996 11.3587 19.1971 11.3587 18.8434C11.3587 18.494 11.4844 18.1957 11.7358 17.9485C11.9872 17.6971 12.2876 17.5714 12.6371 17.5714C12.9822 17.5714 13.2805 17.6971 13.532 17.9485C13.7876 18.1957 13.9155 18.494 13.9155 18.8434C13.9155 19.0778 13.8558 19.293 13.7365 19.489C13.6214 19.6808 13.468 19.8342 13.2763 19.9492C13.0845 20.0643 12.8714 20.1218 12.6371 20.1218Z" fill="#757B82"/>
 															</svg>
 														</span>
-													</div>
-													<button type="button" role="button" data-bs-toggle="collapse" data-bs-target="#instrumentFilter1" aria-expanded="false" aria-controls="instrumentFilter1" class="main-filter-item-header-icon">
+													</span>
+													<span class="main-filter-item-header-icon">
 														<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path fill-rule="evenodd" clip-rule="evenodd" d="M0.337954 0.305758C0.788559 -0.10192 1.51913 -0.10192 1.96974 0.305758L5 3.04734L8.03026 0.305758C8.48087 -0.101919 9.21144 -0.101919 9.66205 0.305758C10.1127 0.713436 10.1127 1.37441 9.66205 1.78209L5 6L0.337954 1.78209C-0.112651 1.37441 -0.112651 0.713435 0.337954 0.305758Z" fill="#757B82"/>
 														</svg>
-													</button>
-												</div>
+													</span>
+												</button>
 												<!-- Filter header -->
 												<div class="collapse" id="instrumentFilter3">
 													<div class="main-filter-item-body">
@@ -598,22 +598,22 @@
 											</div>
 											<!-- Each item -->
 											<div class="main-filter-item">
-												<div class="main-filter-item-header">
-													<div class="main-filter-item-header-text">
-														<button type="button" role="button" data-bs-toggle="collapse" data-bs-target="#instrumentFilter2" aria-expanded="false" aria-controls="instrumentFilter2">Filter Small 1-5</button>
+												<button class="main-filter-item-header" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#instrumentFilter2" aria-expanded="false" aria-controls="instrumentFilter2">
+													<span class="main-filter-item-header-text">
+														<span>Filter Small 1-5</span>
 														<span data-bs-toggle="tooltip" data-bs-title="Filter Small 1-5" data-bs-placement="top">
 															<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<circle cx="13" cy="13" r="12.5" stroke="#757B82"/>
 																<path d="M11.6719 16.2354V16.114C11.6804 15.3214 11.7592 14.6907 11.9084 14.2219C12.0618 13.7532 12.2791 13.3739 12.5604 13.0842C12.8416 12.7944 13.1804 12.5302 13.5767 12.2915C13.8324 12.1296 14.0625 11.9485 14.267 11.7482C14.4716 11.5479 14.6335 11.3178 14.7528 11.0579C14.8722 10.7979 14.9318 10.5103 14.9318 10.195C14.9318 9.8157 14.8423 9.48757 14.6634 9.21058C14.4844 8.93359 14.2457 8.72053 13.9474 8.57138C13.6534 8.41797 13.3253 8.34126 12.9631 8.34126C12.6349 8.34126 12.3217 8.40945 12.0234 8.54581C11.7251 8.68217 11.478 8.89524 11.282 9.18501C11.0859 9.47053 10.973 9.83913 10.9432 10.2908H9C9.02983 9.52379 9.22372 8.87607 9.58168 8.34766C9.93963 7.81499 10.4126 7.41229 11.0007 7.13956C11.593 6.86683 12.2472 6.73047 12.9631 6.73047C13.7472 6.73047 14.4332 6.87749 15.0213 7.17152C15.6094 7.46129 16.0653 7.86825 16.3892 8.3924C16.7173 8.91229 16.8814 9.51953 16.8814 10.2141C16.8814 10.6914 16.8068 11.1218 16.6577 11.5053C16.5085 11.8846 16.2955 12.2234 16.0185 12.5217C15.7457 12.82 15.4176 13.0842 15.0341 13.3143C14.6719 13.5401 14.3778 13.7745 14.152 14.0174C13.9304 14.2603 13.7685 14.5479 13.6662 14.8803C13.5639 15.2127 13.5085 15.6239 13.5 16.114V16.2354H11.6719ZM12.6371 20.1218C12.2876 20.1218 11.9872 19.9982 11.7358 19.7511C11.4844 19.4996 11.3587 19.1971 11.3587 18.8434C11.3587 18.494 11.4844 18.1957 11.7358 17.9485C11.9872 17.6971 12.2876 17.5714 12.6371 17.5714C12.9822 17.5714 13.2805 17.6971 13.532 17.9485C13.7876 18.1957 13.9155 18.494 13.9155 18.8434C13.9155 19.0778 13.8558 19.293 13.7365 19.489C13.6214 19.6808 13.468 19.8342 13.2763 19.9492C13.0845 20.0643 12.8714 20.1218 12.6371 20.1218Z" fill="#757B82"/>
 															</svg>
 														</span>
-													</div>
-													<button type="button" role="button" data-bs-toggle="collapse" data-bs-target="#instrumentFilter2" aria-expanded="false" aria-controls="instrumentFilter2" class="main-filter-item-header-icon">
+													</span>
+													<span class="main-filter-item-header-icon">
 														<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path fill-rule="evenodd" clip-rule="evenodd" d="M0.337954 0.305758C0.788559 -0.10192 1.51913 -0.10192 1.96974 0.305758L5 3.04734L8.03026 0.305758C8.48087 -0.101919 9.21144 -0.101919 9.66205 0.305758C10.1127 0.713436 10.1127 1.37441 9.66205 1.78209L5 6L0.337954 1.78209C-0.112651 1.37441 -0.112651 0.713435 0.337954 0.305758Z" fill="#757B82"/>
 														</svg>
-													</button>
-												</div>
+													</span>
+												</button>
 												<!-- Filter header -->
 												<div class="collapse" id="instrumentFilter2">
 													<div class="main-filter-item-body">
@@ -702,22 +702,22 @@
 											</div>
 											<!-- Each item -->
 											<div class="main-filter-item">
-												<div class="main-filter-item-header">
-													<div class="main-filter-item-header-text">
-														<button type="button" role="button" data-bs-toggle="collapse" data-bs-target="#instrumentFilter4" aria-expanded="false" aria-controls="instrumentFilter4">Filter Small 1-5</button>
+												<button class="main-filter-item-header"  type="button" role="button" data-bs-toggle="collapse" data-bs-target="#instrumentFilter4" aria-expanded="false" aria-controls="instrumentFilter4">
+													<span class="main-filter-item-header-text">
+														<span>Filter Small 1-5</span>
 														<span data-bs-toggle="tooltip" data-bs-title="Filter Small 1-5" data-bs-placement="top">
 															<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<circle cx="13" cy="13" r="12.5" stroke="#757B82"/>
 																<path d="M11.6719 16.2354V16.114C11.6804 15.3214 11.7592 14.6907 11.9084 14.2219C12.0618 13.7532 12.2791 13.3739 12.5604 13.0842C12.8416 12.7944 13.1804 12.5302 13.5767 12.2915C13.8324 12.1296 14.0625 11.9485 14.267 11.7482C14.4716 11.5479 14.6335 11.3178 14.7528 11.0579C14.8722 10.7979 14.9318 10.5103 14.9318 10.195C14.9318 9.8157 14.8423 9.48757 14.6634 9.21058C14.4844 8.93359 14.2457 8.72053 13.9474 8.57138C13.6534 8.41797 13.3253 8.34126 12.9631 8.34126C12.6349 8.34126 12.3217 8.40945 12.0234 8.54581C11.7251 8.68217 11.478 8.89524 11.282 9.18501C11.0859 9.47053 10.973 9.83913 10.9432 10.2908H9C9.02983 9.52379 9.22372 8.87607 9.58168 8.34766C9.93963 7.81499 10.4126 7.41229 11.0007 7.13956C11.593 6.86683 12.2472 6.73047 12.9631 6.73047C13.7472 6.73047 14.4332 6.87749 15.0213 7.17152C15.6094 7.46129 16.0653 7.86825 16.3892 8.3924C16.7173 8.91229 16.8814 9.51953 16.8814 10.2141C16.8814 10.6914 16.8068 11.1218 16.6577 11.5053C16.5085 11.8846 16.2955 12.2234 16.0185 12.5217C15.7457 12.82 15.4176 13.0842 15.0341 13.3143C14.6719 13.5401 14.3778 13.7745 14.152 14.0174C13.9304 14.2603 13.7685 14.5479 13.6662 14.8803C13.5639 15.2127 13.5085 15.6239 13.5 16.114V16.2354H11.6719ZM12.6371 20.1218C12.2876 20.1218 11.9872 19.9982 11.7358 19.7511C11.4844 19.4996 11.3587 19.1971 11.3587 18.8434C11.3587 18.494 11.4844 18.1957 11.7358 17.9485C11.9872 17.6971 12.2876 17.5714 12.6371 17.5714C12.9822 17.5714 13.2805 17.6971 13.532 17.9485C13.7876 18.1957 13.9155 18.494 13.9155 18.8434C13.9155 19.0778 13.8558 19.293 13.7365 19.489C13.6214 19.6808 13.468 19.8342 13.2763 19.9492C13.0845 20.0643 12.8714 20.1218 12.6371 20.1218Z" fill="#757B82"/>
 															</svg>
 														</span>
-													</div>
-													<button type="button" role="button" data-bs-toggle="collapse" data-bs-target="#instrumentFilter2" aria-expanded="false" aria-controls="instrumentFilter2" class="main-filter-item-header-icon">
+													</span>
+													<span class="main-filter-item-header-icon">
 														<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path fill-rule="evenodd" clip-rule="evenodd" d="M0.337954 0.305758C0.788559 -0.10192 1.51913 -0.10192 1.96974 0.305758L5 3.04734L8.03026 0.305758C8.48087 -0.101919 9.21144 -0.101919 9.66205 0.305758C10.1127 0.713436 10.1127 1.37441 9.66205 1.78209L5 6L0.337954 1.78209C-0.112651 1.37441 -0.112651 0.713435 0.337954 0.305758Z" fill="#757B82"/>
 														</svg>
-													</button>
-												</div>
+													</span>
+												</button>
 												<!-- Filter header -->
 												<div class="collapse" id="instrumentFilter4">
 													<div class="main-filter-item-body">
@@ -884,8 +884,8 @@
 							<!-- Instrument database sub left -->
 							<div class="instrument-database-sub-right">
 								<div class="filter-sorting">
-									<label class="filter-sorting-ascending-descending">
-										<select class="filter-sorting-ascending-descending-select">
+									<label class="filter-sorting-ascending-descending" for="ascendingDescendingSorting">
+										<select id="ascendingDescendingSorting" class="filter-sorting-ascending-descending-select">
 											<option value="1">A-Z</option>
 											<option value="1">Z-A</option>
 										</select>
@@ -1748,6 +1748,30 @@
 		<script>
 			const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 			const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const filterOpenButton = document.querySelector('.instrument-database-filter-toggle');
+				const filterCloseButton = document.querySelector('.filter-close');
+				const filterMenu = document.querySelector('.filter');
+
+				if (filterOpenButton && filterMenu) {
+					filterOpenButton.addEventListener('click', function (e) {
+						e.preventDefault();
+						filterMenu.classList.add('filter-active');
+					});
+				}
+
+				if (filterCloseButton) {
+					filterCloseButton.addEventListener('click', function (e) {
+						e.preventDefault();
+						const parentMenu = filterCloseButton.closest('.filter');
+						if (parentMenu) {
+							parentMenu.classList.remove('filter-active');
+						}
+					});
+				}
+			});
 		</script>
 	</body>
 </html>
