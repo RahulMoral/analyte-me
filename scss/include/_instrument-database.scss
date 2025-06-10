@@ -804,6 +804,11 @@
 							position: absolute;
 							width: 100%;
 						}
+						&.remove-shadow{
+							&:after{
+								content: none;
+							}
+						}
 						.instrument-database-details-bottom-about-image{
 							border-radius: 24px;
 							overflow: hidden;
@@ -827,10 +832,17 @@
 								margin-bottom: 0;
 							}
 							article{
+								display: flex;
+								flex-direction: column;
 								margin-bottom: 0;
 								max-height: 392px;
 								overflow: hidden;
 								row-gap: 1rem;
+								transition: height 0.4s;
+								&.expand-about{
+									max-height: none;
+									overflow: unset;
+								}
 								p{
 									color: black;
 									font-size: 18px;

@@ -117,14 +117,16 @@
 		position: relative;
 		.home-category-items{
 			display: flex;
+			gap: 24px;
+			padding-bottom: 1px;
 			transition: transform 0.3s ease;
 			will-change: transform;
-			gap: 24px;
 			.home-category-item {
 				background-color: white;
 				border: 1px solid #C9C9C9;
 				border-radius: 18px;
 				flex: 0 0 184px;
+				height: 162px;
 				max-width: 184px;
 				overflow: hidden;
 				position: relative;

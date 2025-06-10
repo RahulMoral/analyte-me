@@ -372,14 +372,14 @@
 											<h3>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested</h3>
 											<div class="instrument-database-details-bottom-about-content">
 												<h4>Contrary to popular</h4>
-												<article>
+												<article id="expandAboutContent">
 													<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <a href="javascript:void(0);">Richard McClintock</a>, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet.."</p>
 													<p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. Finibus Bonorum et Malorum" Finibus Bonorum et Malorum"</p>
 													<p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. Finibus Bonorum et Malorum" Finibus Bonorum et Malorum"</p>
 													<p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. Finibus Bonorum et Malorum" Finibus Bonorum et Malorum"</p>
 												</article>
 											</div>
-											<button class="instrument-database-details-bottom-about-expand-button" type="button" role="button">
+											<button id="expandAboutButton" class="instrument-database-details-bottom-about-expand-button" type="button" role="button">
 												<span>All about</span>
 												<span>
 													<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1002,6 +1002,25 @@
 				updateVisible();
 				cloneLoopItems();
 				moveTo(current);
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const expandAboutButton = document.getElementById('expandAboutButton');
+				const expandAboutContent = document.getElementById('expandAboutContent');
+				const instrumentDatabaseAbout = document.getElementById('instrumentDatabaseAbout');
+
+				expandAboutButton.addEventListener('click', function() {
+					expandAboutContent.classList.toggle('expand-about');
+					instrumentDatabaseAbout.classList.toggle('remove-shadow');
+
+					const textSpan = expandAboutButton.querySelector('span:first-child');
+					if (expandAboutContent.classList.contains('expand-about')) {
+						textSpan.textContent = 'Hide About';
+					} else {
+						textSpan.textContent = 'All about';
+					}
+				});
 			});
 		</script>
 	</body>
